@@ -11,8 +11,6 @@ pipeline {
 					mvn install
 					mvn clean
 					mvn deploy
-					dir
-					
 		}
 		input message: 'Shutdown Webtrade (Force to stop now)?'
             }
