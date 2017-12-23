@@ -15,7 +15,7 @@ pipeline {
 					bat 'mvn install'
 					bat 'mvn package'
 					bat 'cd target'
-					bat 'java -jar JenkinsDemo-0.0.1-SNAPSHOT-fat.jar'
+					bat 'java -jar target/JenkinsDemo-0.0.1-SNAPSHOT-fat.jar'
             }
         }
     }
