@@ -35,10 +35,10 @@ public class MainVerticle extends AbstractVerticle {
     rt.response().end("Do Get Request Working Well");
   }
   
-  private void DoGetSession(RoutingContext rt) {
+ /* private void DoGetSession(RoutingContext rt) {
     rt.response().end("Your IP is "+ rt.request().remoteAddress().host());
   }
-  
+  */
   private void DoPost(RoutingContext rt) {
     rt.response().end("Do Post Request Working Well");
   }
