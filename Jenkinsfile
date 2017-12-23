@@ -2,17 +2,11 @@ pipeline {
     agent any
 
     stages {
-		stage('Checkout'){
-			steps{
-				echo 'Stage Checkout..'
-		   }
-       }
 		stage('Test'){
 			steps{
 				echo 'Stage Test...'
        }
 	   }
-		
         stage('Delivery') {
             steps {
 				echo 'Deploying package...'
