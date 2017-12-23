@@ -4,7 +4,7 @@ pipeline {
     stages {
 		stage('Checkout'){
 			steps{
-				echo 'Stage Checkout...'
+				
 		   }
        }
 		stage('Test'){
@@ -12,7 +12,6 @@ pipeline {
 				echo 'Stage Test...'
        }
 	   }
-		
         stage('Delivery') {
             steps {
 				echo 'Deploying package...'
