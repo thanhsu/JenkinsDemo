@@ -12,7 +12,7 @@ pipeline {
 					mvn clean
 					mvn deploy
 					dir
-                    java -jar 'target/JenkinsDemo-0.0.1-SNAPSHOT-fat.jar' 
+					java -jar target/JenkinsDemo-0.0.1-SNAPSHOT-fat.jar 
 		}
 		input message: 'Shutdown Webtrade (Force to stop now)?'
             }
