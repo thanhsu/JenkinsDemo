@@ -3,16 +3,20 @@ pipeline {
 
     stages {
 		stage('Checkout'){
-           echo 'Stage Checkout...'
+			steps{
+				echo 'Stage Checkout...'
+		   }
        }
 		stage('Test'){
-			echo 'Stage Test...'
+			steps{
+				echo 'Stage Test...'
        }
+	   }
 		
         stage('Delivery') {
             steps {
-		    echo 'Deploying package...'
-		    echo 'Must Close Port 8089 Before '
+				echo 'Deploying package...'
+				echo 'Must Close Port 8089 Before '
                     echo '== Deploy package'
 					bat 'dir'
 					bat 'mvn -version'
