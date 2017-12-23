@@ -2,10 +2,17 @@ pipeline {
     agent any
 
     stages {
+		stage('Checkout'){
+           echo 'Stage Checkout...'
+       }
+		stage('Test'){
+			echo 'Stage Test...'
+       }
+		
         stage('Delivery') {
             steps {
 		    echo 'Deploying package...'
-		    echo '== Clean port 8089'
+		    echo 'Must Close Port 8089 Before '
                     echo '== Deploy package'
 					bat 'dir'
 					bat 'mvn -version'
