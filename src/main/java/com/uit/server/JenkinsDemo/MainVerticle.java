@@ -32,7 +32,7 @@ public class MainVerticle extends AbstractVerticle {
   }
 
   private void DoGet(RoutingContext rt) {
-    rt.response().end("Do Get Request Working Well");
+    rt.response().end("Do Get Request Working Well Well");
   }
   
   private void DoGetSession(RoutingContext rt) {
